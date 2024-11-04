@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Client(models.Model):
     phone_number = models.TextField(max_length=11, unique=True)
     operator_code = models.TextField(max_length=3)

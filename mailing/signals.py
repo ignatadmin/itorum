@@ -7,6 +7,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 @receiver(post_save, sender=Mailing)
 def schedule_mailing(sender, instance, **kwargs):
     if instance.start_time <= timezone.now() <= instance.end_time:

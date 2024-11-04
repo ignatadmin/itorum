@@ -2,6 +2,7 @@ import re
 from rest_framework import serializers
 from .models import Client, Mailing, Message
 
+
 class ClientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Client

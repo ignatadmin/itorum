@@ -1,6 +1,7 @@
 from celery import Celery
 import os
 
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webapp.settings')
 
 app = Celery('webapp')
